@@ -1,0 +1,13 @@
+body{padding-top: 50px;}
+.carousel{
+	height: 250px;
+	background-color: #000000;
+}
+.carousel .item{
+	height: 250px;
+	background-color: #000000;
+}
+.carousel img{
+	width: 100%;
+}
+#sanlan{text-align: center;margin-top: 60px;}
