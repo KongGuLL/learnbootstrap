@@ -1,4 +1,4 @@
-body{padding-top: 50px;}
+body{padding-top: 50px;padding-bottom: 50px;}
 .carousel{
 	height: 250px;
 	background-color: #000000;
@@ -11,3 +11,6 @@ body{padding-top: 50px;}
 	width: 100%;
 }
 #sanlan{text-align: center;margin-top: 60px;}
+hr .divider{margin: 40px;}
+#biaoqian>div{text-align: center;}
+footer{margin-top: 50px;}

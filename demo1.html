@@ -7,106 +7,174 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<title>Bootstrap demo1</title>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
 	</head>
 
 	<body>
-		 <!-- 导航开始 -->
-	<nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button"class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		<!-- 导航开始 -->
+		<nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#demo-navbar">
 				<span class="sr-only">Toggle navigation</span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>	
 				</button>
-				<a href="#" class="navbar-brand">空谷</a>
-			</div>
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">新闻</a></li>
-					<li><a href="#">文学</a></li>
-					<li><a href="#">生活</a></li>
-					<li><a href="#">娱乐</a></li>
-					<li><a href="#">动漫</a></li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle"data-toggle="dropdown">技术<span class="caret"></span></a>
-					<ul class="dropdown-menu" role="menu">
-						<li><a href="#">网络</a></li>
-						<li><a href="#">研发</a></li>
-						<li><a href="#">设计</a></li>
+					<a href="#" class="navbar-brand">空谷</a>
+				</div>
+				<div class="collapse navbar-collapse" id="demo-navbar">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">新闻</a></li>
+						<li><a href="#">文学</a></li>
+						<li><a href="#">生活</a></li>
+						<li><a href="#">娱乐</a></li>
+						<li><a href="#">动漫</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">技术<span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#one">网络</a></li>
+								<li><a href="#two">研发</a></li>
+								<li><a href="#three">设计</a></li>
+							</ul>
+						</li>
+						<li><a href="#" data-toggle="modal" data-target="#tanchukuang">弹出框</a></li>
 					</ul>
-					</li>
-				</ul>
+				</div>
 			</div>
+		</nav>
+		<!-- 导航结束-->
+		<!-- 幻灯片开始 -->
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			</ol>
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img src="images/datu.gif" alt="...">
+					<div class="carousel-caption">
+						这是一个幻灯片
+					</div>
+				</div>
+				<div class="item">
+					<img src="images/zhezhaotu.gif" alt="...">
+					<div class="carousel-caption">
+						这还是一个幻灯片
+					</div>
+				</div>
+				<div class="item">
+					<img src="images/zhezhaotu.gif" alt="...">
+					<div class="carousel-caption">
+						这又是一个幻灯片
+					</div>
+				</div>
+				...
+			</div>
+
+			<!-- Controls -->
+			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
 		</div>
-	</nav>
-	<!-- 导航结束-->
-	  <!-- 幻灯片开始 -->
-	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="images/datu.gif" alt="...">
-      <div class="carousel-caption">
-     这是一个幻灯片
-      </div>
-    </div>
-    <div class="item">
-      <img src="images/zhezhaotu.gif" alt="...">
-      <div class="carousel-caption">
-    这还是一个幻灯片
-      </div>
-    </div>
-    <div class="item">
-      <img src="images/zhezhaotu.gif" alt="...">
-      <div class="carousel-caption">
-    这又是一个幻灯片
-      </div>
-    </div>
-    ...
-  </div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-	 <!-- 幻灯片结束 -->	
-		<!-- 三栏布局开始 -->	
+		<!-- 幻灯片结束 -->
+		<!-- 三栏布局开始 -->
 		<div class="container" id="sanlan">
 			<div class="row">
 				<div class="col-md-4">
-					<img src="images/a044ad345982b2b76ed5a35e33adcbef77099be6.jpg" width="200px" height="200px"/>
+					<img src="images/a044ad345982b2b76ed5a35e33adcbef77099be6.jpg" width="200px" height="200px" />
 					<p>空谷校园网是由广西大学文学院主管、面向全国青年大学生的先锋性、公益性网站。自2000年建站以来，空谷一直坚持“用学生的视角审视寰宇，以学生口吻去传播文化”的宗旨。</p>
 				</div>
 				<div class="col-md-4">
-					<img src="images/a044ad345982b2b76ed5a35e33adcbef77099be6.jpg" width="200px" height="200px"/>
+					<img src="images/a044ad345982b2b76ed5a35e33adcbef77099be6.jpg" width="200px" height="200px" />
 					<p>空谷校园网是由广西大学文学院主管、面向全国青年大学生的先锋性、公益性网站。自2000年建站以来，空谷一直坚持“用学生的视角审视寰宇，以学生口吻去传播文化”的宗旨。</p>
 				</div>
 				<div class="col-md-4">
-					<img src="images/a044ad345982b2b76ed5a35e33adcbef77099be6.jpg" width="200px" height="200px"/>
+					<img src="images/a044ad345982b2b76ed5a35e33adcbef77099be6.jpg" width="200px" height="200px" />
 					<p>空谷校园网是由广西大学文学院主管、面向全国青年大学生的先锋性、公益性网站。自2000年建站以来，空谷一直坚持“用学生的视角审视寰宇，以学生口吻去传播文化”的宗旨。</p>
+
 				</div>
-				
+
 			</div>
+			<hr class="divider" />
+			
+		<!-- 三栏布局结束 -->
+		<!-- 标签页开始 -->
+		<div class="container">
+			<ul class="nav nav-tabs" role="tablist" id="tab-list">
+				<li class="active"><a href="#one" role="tab" data-toggle="tab">one</a></li>
+				<li><a href="#two" role="tab" data-toggle="tab">two</a></li>
+				<li><a href="#three" role="tab" data-toggle="tab">three</a></li>
+			</ul>
 		</div>
-		<!-- 三栏布局结束 -->	
+		<div class="tab-content" id="biaoqian">
+			<div class="tab-pane active" id="one">
+				<img src="images/a044ad345982b2b76ed5a35e33adcbef77099be6.jpg" width="200px" height="200px" />
+				<p>空谷校园网是由广西大学文学院主管、面向全国青年大学生的先锋性、公益性网站。自2000年建站以来，空谷一直坚持“用学生的视角审视寰宇，以学生口吻去传播文化”的宗旨。</p>
+			</div>
+			<div class="tab-pane" id="two">
+				<img src="images/a044ad345982b2b76ed5a35e33adcbef77099be6.jpg" width="200px" height="200px" />
+				<img src="images/a044ad345982b2b76ed5a35e33adcbef77099be6.jpg" width="200px" height="200px" />
+
+				<p>空谷校园网是由广西大学文学院主管、面向全国青年大学生的先锋性、公益性网站。自2000年建站以来，空谷一直坚持“用学生的视角审视寰宇，以学生口吻去传播文化”的宗旨。</p>
+
+			</div>
+			<div class="tab-pane" id="three">
+				<img src="images/a044ad345982b2b76ed5a35e33adcbef77099be6.jpg" width="200px" height="200px" />
+				<img src="images/a044ad345982b2b76ed5a35e33adcbef77099be6.jpg" width="200px" height="200px" />
+				<img src="images/a044ad345982b2b76ed5a35e33adcbef77099be6.jpg" width="200px" height="200px" />
+				<p>空谷校园网是由广西大学文学院主管、面向全国青年大学生的先锋性、公益性网站。自2000年建站以来，空谷一直坚持“用学生的视角审视寰宇，以学生口吻去传播文化”的宗旨。</p>
+
+			</div>
+			
+		</div>
+		<!-- 标签页结束 -->
 		
+		
+			<footer>
+				<p class="pull-right"><a href="#top">回到顶部</a></p>
+				<p>©2016/3/23 练习</p>
+			</footer>
+		</div>
+		<!--弹出框-->
+        <div class="modal fade" id="tanchukuang">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">空谷校园网弹出框</h4>
+      </div>
+      <div class="modal-body">
+        <p>空谷校园网空谷校园网空谷校园网空谷校园网空谷校园网&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        <button type="button" class="btn btn-primary">我知道了</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
 		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$(#demo-navbar .dropdown-menu a).click(function(){
+			var href = $(this).attr("href");
+			$("#tab-list a[href='"+href+"']").tab("show")
+		})
+	})
+	</script>
 	</body>
+
 </html>
